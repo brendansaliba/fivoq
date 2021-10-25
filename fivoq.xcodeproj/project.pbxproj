@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E2FD92400A26F8EB4A41677 /* Pods_fivoq_fivoqUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8605FEBD714A48FADBEC117B /* Pods_fivoq_fivoqUITests.framework */; };
+		9712076B2722468F00B0153D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712076A2722468F00B0153D /* AppDelegate.swift */; };
+		9712076D2722468F00B0153D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712076C2722468F00B0153D /* SceneDelegate.swift */; };
+		9712076F2722468F00B0153D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712076E2722468F00B0153D /* ViewController.swift */; };
+		971207722722468F00B0153D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971207702722468F00B0153D /* Main.storyboard */; };
+		971207742722469000B0153D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971207732722469000B0153D /* Assets.xcassets */; };
+		971207772722469000B0153D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971207752722469000B0153D /* LaunchScreen.storyboard */; };
+		971207822722469000B0153D /* fivoqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971207812722469000B0153D /* fivoqTests.swift */; };
+		9712078C2722469000B0153D /* fivoqUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712078B2722469000B0153D /* fivoqUITests.swift */; };
+		9712078E2722469100B0153D /* fivoqUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712078D2722469100B0153D /* fivoqUITestsLaunchTests.swift */; };
+		9712079C2722482E00B0153D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712079B2722482E00B0153D /* NetworkManager.swift */; };
+		971207A127224ACD00B0153D /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971207A027224ACD00B0153D /* LoadingVC.swift */; };
+		971207A427224AF800B0153D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971207A327224AF800B0153D /* MainVC.swift */; };
+		97D522BF2726059A002BEA25 /* GlobalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D522BE2726059A002BEA25 /* GlobalExtensions.swift */; };
+		97D522E32726509C002BEA25 /* LibreBaskerville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97D522E02726509C002BEA25 /* LibreBaskerville-Italic.ttf */; };
+		97D522E42726509C002BEA25 /* LibreBaskerville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97D522E12726509C002BEA25 /* LibreBaskerville-Regular.ttf */; };
+		97D522E52726509C002BEA25 /* LibreBaskerville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97D522E22726509C002BEA25 /* LibreBaskerville-Bold.ttf */; };
+		B0CAA7F632E923CF3542868C /* Pods_fivoq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB38A2AE0B2C988E2A2DE783 /* Pods_fivoq.framework */; };
+		B19B6EE868232D59160EF05A /* Pods_fivoqTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10F7BC7909642E30BAA6450 /* Pods_fivoqTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9712077E2722469000B0153D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9712075F2722468F00B0153D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 971207662722468F00B0153D;
+			remoteInfo = fivoq;
+		};
+		971207882722469000B0153D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9712075F2722468F00B0153D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 971207662722468F00B0153D;
+			remoteInfo = fivoq;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		081DF756C41916F6190EF404 /* Pods-fivoq-fivoqUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fivoq-fivoqUITests.debug.xcconfig"; path = "Target Support Files/Pods-fivoq-fivoqUITests/Pods-fivoq-fivoqUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		132230721533277F87CA1CFD /* Pods-fivoqTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fivoqTests.release.xcconfig"; path = "Target Support Files/Pods-fivoqTests/Pods-fivoqTests.release.xcconfig"; sourceTree = "<group>"; };
+		61AC28664744733D51F59D21 /* Pods-fivoq.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fivoq.debug.xcconfig"; path = "Target Support Files/Pods-fivoq/Pods-fivoq.debug.xcconfig"; sourceTree = "<group>"; };
+		62C2E7D889FF1E1AAF6388F1 /* Pods-fivoqTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fivoqTests.debug.xcconfig"; path = "Target Support Files/Pods-fivoqTests/Pods-fivoqTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8605FEBD714A48FADBEC117B /* Pods_fivoq_fivoqUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fivoq_fivoqUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B21220BE313B799665B3089 /* Pods-fivoq-fivoqUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fivoq-fivoqUITests.release.xcconfig"; path = "Target Support Files/Pods-fivoq-fivoqUITests/Pods-fivoq-fivoqUITests.release.xcconfig"; sourceTree = "<group>"; };
+		971207672722468F00B0153D /* fivoq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fivoq.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9712076A2722468F00B0153D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9712076C2722468F00B0153D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9712076E2722468F00B0153D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		971207712722468F00B0153D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		971207732722469000B0153D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		971207762722469000B0153D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		971207782722469000B0153D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9712077D2722469000B0153D /* fivoqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fivoqTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		971207812722469000B0153D /* fivoqTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fivoqTests.swift; sourceTree = "<group>"; };
+		971207872722469000B0153D /* fivoqUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fivoqUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9712078B2722469000B0153D /* fivoqUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fivoqUITests.swift; sourceTree = "<group>"; };
+		9712078D2722469100B0153D /* fivoqUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fivoqUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9712079B2722482E00B0153D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		971207A027224ACD00B0153D /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		971207A327224AF800B0153D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		97D522BE2726059A002BEA25 /* GlobalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalExtensions.swift; sourceTree = "<group>"; };
+		97D522E02726509C002BEA25 /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; };
+		97D522E12726509C002BEA25 /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Regular.ttf"; sourceTree = "<group>"; };
+		97D522E22726509C002BEA25 /* LibreBaskerville-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Bold.ttf"; sourceTree = "<group>"; };
+		BB38A2AE0B2C988E2A2DE783 /* Pods_fivoq.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fivoq.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF33D2F15EC0F610A59B70BA /* Pods-fivoq.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fivoq.release.xcconfig"; path = "Target Support Files/Pods-fivoq/Pods-fivoq.release.xcconfig"; sourceTree = "<group>"; };
+		E10F7BC7909642E30BAA6450 /* Pods_fivoqTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fivoqTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		971207642722468F00B0153D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0CAA7F632E923CF3542868C /* Pods_fivoq.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9712077A2722469000B0153D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19B6EE868232D59160EF05A /* Pods_fivoqTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971207842722469000B0153D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E2FD92400A26F8EB4A41677 /* Pods_fivoq_fivoqUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F0072D1F9757C355B94E413 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB38A2AE0B2C988E2A2DE783 /* Pods_fivoq.framework */,
+				8605FEBD714A48FADBEC117B /* Pods_fivoq_fivoqUITests.framework */,
+				E10F7BC7909642E30BAA6450 /* Pods_fivoqTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9712075E2722468F00B0153D = {
+			isa = PBXGroup;
+			children = (
+				971207692722468F00B0153D /* fivoq */,
+				971207802722469000B0153D /* fivoqTests */,
+				9712078A2722469000B0153D /* fivoqUITests */,
+				971207682722468F00B0153D /* Products */,
+				E007BDF1546FB501CE0DEBC6 /* Pods */,
+				0F0072D1F9757C355B94E413 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		971207682722468F00B0153D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				971207672722468F00B0153D /* fivoq.app */,
+				9712077D2722469000B0153D /* fivoqTests.xctest */,
+				971207872722469000B0153D /* fivoqUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		971207692722468F00B0153D /* fivoq */ = {
+			isa = PBXGroup;
+			children = (
+				971207732722469000B0153D /* Assets.xcassets */,
+				97D522DF2726509C002BEA25 /* Fonts */,
+				9712079E2722488800B0153D /* Storyboards */,
+				971207A227224AE900B0153D /* Main */,
+				9712079F27224AC000B0153D /* Loading */,
+				9712079D2722487900B0153D /* Delegates */,
+				9712079A2722482100B0153D /* Globals */,
+				971207782722469000B0153D /* Info.plist */,
+			);
+			path = fivoq;
+			sourceTree = "<group>";
+		};
+		971207802722469000B0153D /* fivoqTests */ = {
+			isa = PBXGroup;
+			children = (
+				971207812722469000B0153D /* fivoqTests.swift */,
+			);
+			path = fivoqTests;
+			sourceTree = "<group>";
+		};
+		9712078A2722469000B0153D /* fivoqUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9712078B2722469000B0153D /* fivoqUITests.swift */,
+				9712078D2722469100B0153D /* fivoqUITestsLaunchTests.swift */,
+			);
+			path = fivoqUITests;
+			sourceTree = "<group>";
+		};
+		9712079A2722482100B0153D /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				9712079B2722482E00B0153D /* NetworkManager.swift */,
+				97D522BE2726059A002BEA25 /* GlobalExtensions.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		9712079D2722487900B0153D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				9712076A2722468F00B0153D /* AppDelegate.swift */,
+				9712076C2722468F00B0153D /* SceneDelegate.swift */,
+				9712076E2722468F00B0153D /* ViewController.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		9712079E2722488800B0153D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				971207702722468F00B0153D /* Main.storyboard */,
+				971207752722469000B0153D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9712079F27224AC000B0153D /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				971207A027224ACD00B0153D /* LoadingVC.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		971207A227224AE900B0153D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				971207A327224AF800B0153D /* MainVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		97D522DF2726509C002BEA25 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				97D522E02726509C002BEA25 /* LibreBaskerville-Italic.ttf */,
+				97D522E12726509C002BEA25 /* LibreBaskerville-Regular.ttf */,
+				97D522E22726509C002BEA25 /* LibreBaskerville-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E007BDF1546FB501CE0DEBC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61AC28664744733D51F59D21 /* Pods-fivoq.debug.xcconfig */,
+				CF33D2F15EC0F610A59B70BA /* Pods-fivoq.release.xcconfig */,
+				081DF756C41916F6190EF404 /* Pods-fivoq-fivoqUITests.debug.xcconfig */,
+				8B21220BE313B799665B3089 /* Pods-fivoq-fivoqUITests.release.xcconfig */,
+				62C2E7D889FF1E1AAF6388F1 /* Pods-fivoqTests.debug.xcconfig */,
+				132230721533277F87CA1CFD /* Pods-fivoqTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		971207662722468F00B0153D /* fivoq */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971207912722469100B0153D /* Build configuration list for PBXNativeTarget "fivoq" */;
+			buildPhases = (
+				4109392CBFC7AA20761243CA /* [CP] Check Pods Manifest.lock */,
+				971207632722468F00B0153D /* Sources */,
+				971207642722468F00B0153D /* Frameworks */,
+				971207652722468F00B0153D /* Resources */,
+				CEBAD95AAE72E5CA41FF27E4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fivoq;
+			productName = fivoq;
+			productReference = 971207672722468F00B0153D /* fivoq.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9712077C2722469000B0153D /* fivoqTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971207942722469100B0153D /* Build configuration list for PBXNativeTarget "fivoqTests" */;
+			buildPhases = (
+				3B89D08425B20DAC4E075309 /* [CP] Check Pods Manifest.lock */,
+				971207792722469000B0153D /* Sources */,
+				9712077A2722469000B0153D /* Frameworks */,
+				9712077B2722469000B0153D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9712077F2722469000B0153D /* PBXTargetDependency */,
+			);
+			name = fivoqTests;
+			productName = fivoqTests;
+			productReference = 9712077D2722469000B0153D /* fivoqTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		971207862722469000B0153D /* fivoqUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971207972722469100B0153D /* Build configuration list for PBXNativeTarget "fivoqUITests" */;
+			buildPhases = (
+				51ED187391F7B9115A056983 /* [CP] Check Pods Manifest.lock */,
+				971207832722469000B0153D /* Sources */,
+				971207842722469000B0153D /* Frameworks */,
+				971207852722469000B0153D /* Resources */,
+				765A860D021FDAC5EA5C81B8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				971207892722469000B0153D /* PBXTargetDependency */,
+			);
+			name = fivoqUITests;
+			productName = fivoqUITests;
+			productReference = 971207872722469000B0153D /* fivoqUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9712075F2722468F00B0153D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					971207662722468F00B0153D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					9712077C2722469000B0153D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 971207662722468F00B0153D;
+					};
+					971207862722469000B0153D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 971207662722468F00B0153D;
+					};
+				};
+			};
+			buildConfigurationList = 971207622722468F00B0153D /* Build configuration list for PBXProject "fivoq" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9712075E2722468F00B0153D;
+			productRefGroup = 971207682722468F00B0153D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				971207662722468F00B0153D /* fivoq */,
+				9712077C2722469000B0153D /* fivoqTests */,
+				971207862722469000B0153D /* fivoqUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		971207652722468F00B0153D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D522E32726509C002BEA25 /* LibreBaskerville-Italic.ttf in Resources */,
+				971207772722469000B0153D /* LaunchScreen.storyboard in Resources */,
+				971207742722469000B0153D /* Assets.xcassets in Resources */,
+				97D522E42726509C002BEA25 /* LibreBaskerville-Regular.ttf in Resources */,
+				971207722722468F00B0153D /* Main.storyboard in Resources */,
+				97D522E52726509C002BEA25 /* LibreBaskerville-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9712077B2722469000B0153D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971207852722469000B0153D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B89D08425B20DAC4E075309 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fivoqTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4109392CBFC7AA20761243CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fivoq-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51ED187391F7B9115A056983 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fivoq-fivoqUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		765A860D021FDAC5EA5C81B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fivoq-fivoqUITests/Pods-fivoq-fivoqUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fivoq-fivoqUITests/Pods-fivoq-fivoqUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fivoq-fivoqUITests/Pods-fivoq-fivoqUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEBAD95AAE72E5CA41FF27E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fivoq/Pods-fivoq-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fivoq/Pods-fivoq-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fivoq/Pods-fivoq-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		971207632722468F00B0153D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9712079C2722482E00B0153D /* NetworkManager.swift in Sources */,
+				971207A427224AF800B0153D /* MainVC.swift in Sources */,
+				9712076F2722468F00B0153D /* ViewController.swift in Sources */,
+				9712076B2722468F00B0153D /* AppDelegate.swift in Sources */,
+				9712076D2722468F00B0153D /* SceneDelegate.swift in Sources */,
+				971207A127224ACD00B0153D /* LoadingVC.swift in Sources */,
+				97D522BF2726059A002BEA25 /* GlobalExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971207792722469000B0153D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				971207822722469000B0153D /* fivoqTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971207832722469000B0153D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9712078E2722469100B0153D /* fivoqUITestsLaunchTests.swift in Sources */,
+				9712078C2722469000B0153D /* fivoqUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9712077F2722469000B0153D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 971207662722468F00B0153D /* fivoq */;
+			targetProxy = 9712077E2722469000B0153D /* PBXContainerItemProxy */;
+		};
+		971207892722469000B0153D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 971207662722468F00B0153D /* fivoq */;
+			targetProxy = 971207882722469000B0153D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		971207702722468F00B0153D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				971207712722468F00B0153D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		971207752722469000B0153D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				971207762722469000B0153D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9712078F2722469100B0153D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		971207902722469100B0153D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		971207922722469100B0153D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61AC28664744733D51F59D21 /* Pods-fivoq.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 343LR6825Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fivoq/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fivoq.fivoq;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		971207932722469100B0153D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF33D2F15EC0F610A59B70BA /* Pods-fivoq.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 343LR6825Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = fivoq/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fivoq.fivoq;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		971207952722469100B0153D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62C2E7D889FF1E1AAF6388F1 /* Pods-fivoqTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 343LR6825Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fivoq.fivoqTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fivoq.app/fivoq";
+			};
+			name = Debug;
+		};
+		971207962722469100B0153D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 132230721533277F87CA1CFD /* Pods-fivoqTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 343LR6825Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fivoq.fivoqTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fivoq.app/fivoq";
+			};
+			name = Release;
+		};
+		971207982722469100B0153D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 081DF756C41916F6190EF404 /* Pods-fivoq-fivoqUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 343LR6825Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fivoq.fivoqUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fivoq;
+			};
+			name = Debug;
+		};
+		971207992722469100B0153D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B21220BE313B799665B3089 /* Pods-fivoq-fivoqUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 343LR6825Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fivoq.fivoqUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fivoq;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		971207622722468F00B0153D /* Build configuration list for PBXProject "fivoq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9712078F2722469100B0153D /* Debug */,
+				971207902722469100B0153D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		971207912722469100B0153D /* Build configuration list for PBXNativeTarget "fivoq" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971207922722469100B0153D /* Debug */,
+				971207932722469100B0153D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		971207942722469100B0153D /* Build configuration list for PBXNativeTarget "fivoqTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971207952722469100B0153D /* Debug */,
+				971207962722469100B0153D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		971207972722469100B0153D /* Build configuration list for PBXNativeTarget "fivoqUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971207982722469100B0153D /* Debug */,
+				971207992722469100B0153D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9712075F2722468F00B0153D /* Project object */;
+}

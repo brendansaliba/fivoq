@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoadingVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoadingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoadingVC" customModule="fivoq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fivoq" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reM-9Z-o8f">
+                                <rect key="frame" x="50" y="413.5" width="118.5" height="69"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="reM-9Z-o8f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="35h-Rc-rgp"/>
+                            <constraint firstItem="reM-9Z-o8f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Gg7-E5-Zm9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="121"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="DPc-E0-fmz">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UI5-wB-RPl" customClass="MainVC" customModule="fivoq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tJ8-PI-lUj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Hl-Dg-bnO">
+                                <rect key="frame" x="182" y="375.5" width="50" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="dVi-xD-opJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpi-yO-gcC">
+                                <rect key="frame" x="160.5" y="429.5" width="93" height="37"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="generate">
+                                    <fontDescription key="titleFontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sendButtonTapped:" destination="UI5-wB-RPl" eventType="touchUpInside" id="QrN-FJ-TLx"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QpV-e9-pnj">
+                                <rect key="frame" x="87" y="486.5" width="240" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="z8N-o5-Av6"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O9g-M3-uXn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QpV-e9-pnj" firstAttribute="centerX" secondItem="tJ8-PI-lUj" secondAttribute="centerX" id="3jp-4p-D01"/>
+                            <constraint firstItem="QpV-e9-pnj" firstAttribute="top" secondItem="hpi-yO-gcC" secondAttribute="bottom" constant="20" id="46c-MT-V56"/>
+                            <constraint firstItem="9Hl-Dg-bnO" firstAttribute="centerX" secondItem="tJ8-PI-lUj" secondAttribute="centerX" id="F8H-4v-Hul"/>
+                            <constraint firstItem="hpi-yO-gcC" firstAttribute="centerY" secondItem="tJ8-PI-lUj" secondAttribute="centerY" id="Q8F-X3-G7s"/>
+                            <constraint firstItem="O9g-M3-uXn" firstAttribute="trailing" secondItem="QpV-e9-pnj" secondAttribute="trailing" constant="87" id="cGN-wO-JPD"/>
+                            <constraint firstItem="hpi-yO-gcC" firstAttribute="centerX" secondItem="tJ8-PI-lUj" secondAttribute="centerX" id="d9c-RU-AK4"/>
+                            <constraint firstItem="hpi-yO-gcC" firstAttribute="top" secondItem="9Hl-Dg-bnO" secondAttribute="bottom" constant="20" id="huS-dI-lpP"/>
+                            <constraint firstItem="QpV-e9-pnj" firstAttribute="leading" secondItem="O9g-M3-uXn" secondAttribute="leading" constant="87" id="qWk-Xk-OmH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="outputTextView" destination="QpV-e9-pnj" id="FAW-gH-jSq"/>
+                        <outlet property="sendButton" destination="hpi-yO-gcC" id="Pv2-dD-W7q"/>
+                        <outlet property="textInput" destination="9Hl-Dg-bnO" id="ywD-nW-ebK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6nE-O8-3ms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
