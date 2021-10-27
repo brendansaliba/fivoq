@@ -26,5 +26,5 @@ class LoadingVC: UIViewController {
         mainVC.modalTransitionStyle = .crossDissolve
         self.present(mainVC, animated: true, completion: nil)
     }
-    
+
 }

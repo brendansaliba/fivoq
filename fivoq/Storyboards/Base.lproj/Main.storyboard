@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fivoq" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reM-9Z-o8f">
-                                <rect key="frame" x="50" y="413.5" width="118.5" height="69"/>
+                                <rect key="frame" x="50" y="413.5" width="314" height="69"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -28,6 +28,7 @@
                         <constraints>
                             <constraint firstItem="reM-9Z-o8f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="35h-Rc-rgp"/>
                             <constraint firstItem="reM-9Z-o8f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Gg7-E5-Zm9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="reM-9Z-o8f" secondAttribute="trailing" constant="50" id="Ndg-ID-69B"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -71,21 +72,29 @@
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ey-nB-KaU">
+                                <rect key="frame" x="348" y="44" width="46" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="point.3.filled.connected.trianglepath.dotted" catalog="system"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O9g-M3-uXn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QpV-e9-pnj" firstAttribute="centerX" secondItem="tJ8-PI-lUj" secondAttribute="centerX" id="3jp-4p-D01"/>
                             <constraint firstItem="QpV-e9-pnj" firstAttribute="top" secondItem="hpi-yO-gcC" secondAttribute="bottom" constant="20" id="46c-MT-V56"/>
+                            <constraint firstItem="O9g-M3-uXn" firstAttribute="trailing" secondItem="1ey-nB-KaU" secondAttribute="trailing" constant="20" id="5nS-KC-mIL"/>
                             <constraint firstItem="9Hl-Dg-bnO" firstAttribute="centerX" secondItem="tJ8-PI-lUj" secondAttribute="centerX" id="F8H-4v-Hul"/>
                             <constraint firstItem="hpi-yO-gcC" firstAttribute="centerY" secondItem="tJ8-PI-lUj" secondAttribute="centerY" id="Q8F-X3-G7s"/>
                             <constraint firstItem="O9g-M3-uXn" firstAttribute="trailing" secondItem="QpV-e9-pnj" secondAttribute="trailing" constant="87" id="cGN-wO-JPD"/>
                             <constraint firstItem="hpi-yO-gcC" firstAttribute="centerX" secondItem="tJ8-PI-lUj" secondAttribute="centerX" id="d9c-RU-AK4"/>
                             <constraint firstItem="hpi-yO-gcC" firstAttribute="top" secondItem="9Hl-Dg-bnO" secondAttribute="bottom" constant="20" id="huS-dI-lpP"/>
+                            <constraint firstItem="1ey-nB-KaU" firstAttribute="top" secondItem="O9g-M3-uXn" secondAttribute="top" id="lhS-G9-SXx"/>
                             <constraint firstItem="QpV-e9-pnj" firstAttribute="leading" secondItem="O9g-M3-uXn" secondAttribute="leading" constant="87" id="qWk-Xk-OmH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="menuButton" destination="1ey-nB-KaU" id="twR-3v-Son"/>
                         <outlet property="outputTextView" destination="QpV-e9-pnj" id="FAW-gH-jSq"/>
                         <outlet property="sendButton" destination="hpi-yO-gcC" id="Pv2-dD-W7q"/>
                         <outlet property="textInput" destination="9Hl-Dg-bnO" id="ywD-nW-ebK"/>
@@ -95,8 +104,124 @@
             </objects>
             <point key="canvasLocation" x="867" y="121"/>
         </scene>
+        <!--SettingsVC-->
+        <scene sceneID="0zn-KE-89d">
+            <objects>
+                <viewController storyboardIdentifier="SettingsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1aW-6s-1aq" customClass="SettingsVC" customModule="fivoq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e5b-r0-zKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvM-w9-EdI">
+                                <rect key="frame" x="50" y="64" width="176.5" height="69"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5bE-xW-MDV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WvM-w9-EdI" firstAttribute="top" secondItem="5bE-xW-MDV" secondAttribute="top" constant="20" id="To3-j9-lbL"/>
+                            <constraint firstItem="WvM-w9-EdI" firstAttribute="leading" secondItem="5bE-xW-MDV" secondAttribute="leading" constant="50" id="ruV-dZ-bVn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcB-tb-8oe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741" y="498"/>
+        </scene>
+        <!--InstructionsVC-->
+        <scene sceneID="n7D-zp-lsa">
+            <objects>
+                <viewController storyboardIdentifier="InstructionsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ls4-Cz-TMb" customClass="InstructionsVC" customModule="fivoq" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FPD-yM-BsF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fivoq" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dw-dd-1XU">
+                                <rect key="frame" x="50" y="64" width="118.5" height="69"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome to fivoq ('faifôk)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnB-Ol-FQs">
+                                <rect key="frame" x="50" y="173" width="314" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWS-jB-OXi">
+                                <rect key="frame" x="50" y="207.5" width="314" height="78"/>
+                                <string key="text">fivoq allows one to randomly generate sequences of characters, but with a twist: one can specify the configuration of vowels, consonants, numbers, and spaces</string>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to use fivoq, one must enter one's desired configuration of characters into the text field and tap &quot;generate&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFV-Gy-peI">
+                                <rect key="frame" x="50" y="300.5" width="314" height="58.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPn-a6-2YJ">
+                                <rect key="frame" x="50" y="374" width="314" height="78"/>
+                                <string key="text">the configuration must contain only v's for vowels, c's for consonants, n's for numbers, s's for spaces, and/or l's for any letter, selected randomly from the alphabet</string>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enjoy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHG-Th-ktd">
+                                <rect key="frame" x="50" y="467" width="314" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOy-xE-ovL">
+                                <rect key="frame" x="50" y="501.5" width="314" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="proceed"/>
+                                <connections>
+                                    <action selector="proceedButtonTapped:" destination="Ls4-Cz-TMb" eventType="touchUpInside" id="su4-7i-bOM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YVk-FE-ziB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WFV-Gy-peI" firstAttribute="leading" secondItem="YVk-FE-ziB" secondAttribute="leading" constant="50" id="2cu-xG-Ifq"/>
+                            <constraint firstItem="1dw-dd-1XU" firstAttribute="leading" secondItem="YVk-FE-ziB" secondAttribute="leading" constant="50" id="5rr-t4-IPm"/>
+                            <constraint firstItem="EOy-xE-ovL" firstAttribute="top" secondItem="sHG-Th-ktd" secondAttribute="bottom" constant="15" id="BmQ-7C-TRz"/>
+                            <constraint firstItem="EWS-jB-OXi" firstAttribute="top" secondItem="rnB-Ol-FQs" secondAttribute="bottom" constant="15" id="Css-D6-bpa"/>
+                            <constraint firstItem="YVk-FE-ziB" firstAttribute="trailing" secondItem="rnB-Ol-FQs" secondAttribute="trailing" constant="50" id="FQs-1b-NWN"/>
+                            <constraint firstItem="YVk-FE-ziB" firstAttribute="trailing" secondItem="EOy-xE-ovL" secondAttribute="trailing" constant="50" id="JjZ-mc-szS"/>
+                            <constraint firstItem="EOy-xE-ovL" firstAttribute="leading" secondItem="YVk-FE-ziB" secondAttribute="leading" constant="50" id="MV4-mg-MIg"/>
+                            <constraint firstItem="1dw-dd-1XU" firstAttribute="top" secondItem="YVk-FE-ziB" secondAttribute="top" constant="20" id="MhS-Wv-v1Q"/>
+                            <constraint firstItem="YVk-FE-ziB" firstAttribute="trailing" secondItem="EWS-jB-OXi" secondAttribute="trailing" constant="50" id="PCu-4T-CeI"/>
+                            <constraint firstItem="rnB-Ol-FQs" firstAttribute="leading" secondItem="YVk-FE-ziB" secondAttribute="leading" constant="50" id="R63-F4-HoJ"/>
+                            <constraint firstItem="YVk-FE-ziB" firstAttribute="trailing" secondItem="GPn-a6-2YJ" secondAttribute="trailing" constant="50" id="ZDz-5g-at6"/>
+                            <constraint firstItem="EWS-jB-OXi" firstAttribute="leading" secondItem="YVk-FE-ziB" secondAttribute="leading" constant="50" id="ZoJ-OR-VnW"/>
+                            <constraint firstItem="YVk-FE-ziB" firstAttribute="trailing" secondItem="sHG-Th-ktd" secondAttribute="trailing" constant="50" id="fMG-rc-e03"/>
+                            <constraint firstItem="WFV-Gy-peI" firstAttribute="top" secondItem="EWS-jB-OXi" secondAttribute="bottom" constant="15" id="g4F-Hz-LLa"/>
+                            <constraint firstItem="GPn-a6-2YJ" firstAttribute="top" secondItem="WFV-Gy-peI" secondAttribute="bottom" constant="15" id="gKZ-Zp-cUb"/>
+                            <constraint firstItem="GPn-a6-2YJ" firstAttribute="leading" secondItem="YVk-FE-ziB" secondAttribute="leading" constant="50" id="lU4-dr-HW8"/>
+                            <constraint firstItem="rnB-Ol-FQs" firstAttribute="top" secondItem="1dw-dd-1XU" secondAttribute="bottom" constant="40" id="qvs-q5-vqK"/>
+                            <constraint firstItem="sHG-Th-ktd" firstAttribute="leading" secondItem="FPD-yM-BsF" secondAttribute="leading" constant="50" id="rJL-cw-PtH"/>
+                            <constraint firstItem="sHG-Th-ktd" firstAttribute="top" secondItem="GPn-a6-2YJ" secondAttribute="bottom" constant="15" id="tMf-4V-Zba"/>
+                            <constraint firstItem="YVk-FE-ziB" firstAttribute="trailing" secondItem="WFV-Gy-peI" secondAttribute="trailing" constant="50" id="xdD-SB-c85"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="proceedButton" destination="EOy-xE-ovL" id="dmW-Az-lE2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2L-cA-H99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="-196"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="point.3.filled.connected.trianglepath.dotted" catalog="system" width="128" height="96"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

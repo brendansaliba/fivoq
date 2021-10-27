@@ -24,6 +24,8 @@
 		97D522E32726509C002BEA25 /* LibreBaskerville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97D522E02726509C002BEA25 /* LibreBaskerville-Italic.ttf */; };
 		97D522E42726509C002BEA25 /* LibreBaskerville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97D522E12726509C002BEA25 /* LibreBaskerville-Regular.ttf */; };
 		97D522E52726509C002BEA25 /* LibreBaskerville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97D522E22726509C002BEA25 /* LibreBaskerville-Bold.ttf */; };
+		97D522EC2728E860002BEA25 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D522EB2728E860002BEA25 /* InstructionsVC.swift */; };
+		97D522EE2728E869002BEA25 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D522ED2728E869002BEA25 /* SettingsVC.swift */; };
 		B0CAA7F632E923CF3542868C /* Pods_fivoq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB38A2AE0B2C988E2A2DE783 /* Pods_fivoq.framework */; };
 		B19B6EE868232D59160EF05A /* Pods_fivoqTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10F7BC7909642E30BAA6450 /* Pods_fivoqTests.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,8 @@
 		97D522E02726509C002BEA25 /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; };
 		97D522E12726509C002BEA25 /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Regular.ttf"; sourceTree = "<group>"; };
 		97D522E22726509C002BEA25 /* LibreBaskerville-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Bold.ttf"; sourceTree = "<group>"; };
+		97D522EB2728E860002BEA25 /* InstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsVC.swift; sourceTree = "<group>"; };
+		97D522ED2728E869002BEA25 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		BB38A2AE0B2C988E2A2DE783 /* Pods_fivoq.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fivoq.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF33D2F15EC0F610A59B70BA /* Pods-fivoq.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fivoq.release.xcconfig"; path = "Target Support Files/Pods-fivoq/Pods-fivoq.release.xcconfig"; sourceTree = "<group>"; };
 		E10F7BC7909642E30BAA6450 /* Pods_fivoqTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fivoqTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,11 +146,13 @@
 			children = (
 				971207732722469000B0153D /* Assets.xcassets */,
 				97D522DF2726509C002BEA25 /* Fonts */,
-				9712079E2722488800B0153D /* Storyboards */,
-				971207A227224AE900B0153D /* Main */,
-				9712079F27224AC000B0153D /* Loading */,
 				9712079D2722487900B0153D /* Delegates */,
 				9712079A2722482100B0153D /* Globals */,
+				9712079E2722488800B0153D /* Storyboards */,
+				9712079F27224AC000B0153D /* Loading */,
+				971207A227224AE900B0153D /* Main */,
+				97D522E92728E83A002BEA25 /* Instructions */,
+				97D522EA2728E847002BEA25 /* Settings */,
 				971207782722469000B0153D /* Info.plist */,
 			);
 			path = fivoq;
@@ -221,6 +227,22 @@
 				97D522E22726509C002BEA25 /* LibreBaskerville-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		97D522E92728E83A002BEA25 /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				97D522EB2728E860002BEA25 /* InstructionsVC.swift */,
+			);
+			path = Instructions;
+			sourceTree = "<group>";
+		};
+		97D522EA2728E847002BEA25 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				97D522ED2728E869002BEA25 /* SettingsVC.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		E007BDF1546FB501CE0DEBC6 /* Pods */ = {
@@ -483,8 +505,10 @@
 				9712076F2722468F00B0153D /* ViewController.swift in Sources */,
 				9712076B2722468F00B0153D /* AppDelegate.swift in Sources */,
 				9712076D2722468F00B0153D /* SceneDelegate.swift in Sources */,
+				97D522EC2728E860002BEA25 /* InstructionsVC.swift in Sources */,
 				971207A127224ACD00B0153D /* LoadingVC.swift in Sources */,
 				97D522BF2726059A002BEA25 /* GlobalExtensions.swift in Sources */,
+				97D522EE2728E869002BEA25 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +706,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -712,7 +736,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
