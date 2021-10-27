@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -118,14 +119,69 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Iy-bV-8Wx">
+                                <rect key="frame" x="50" y="173" width="314" height="31"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBs-1m-ca3" userLabel="Color Scheme">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="allow dynamic color scheme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nn7-fp-MeG">
+                                                <rect key="frame" x="0.0" y="0.0" width="265" height="31"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6l-ZC-5pL">
+                                                <rect key="frame" x="265" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" name="AccentColor"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MeP-Up-fMa" userLabel="Spacer">
+                                        <rect key="frame" x="0.0" y="31" width="314" height="10"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="M7l-6N-0qv"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvj-L3-xk7" userLabel="Auto Copy">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="auto-copy text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjo-bB-eFB">
+                                                <rect key="frame" x="0.0" y="0.0" width="265" height="31"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mkl-OB-j6b">
+                                                <rect key="frame" x="265" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" name="AccentColor"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="QBs-1m-ca3"/>
+                                        <exclude reference="MeP-Up-fMa"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5bE-xW-MDV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WvM-w9-EdI" firstAttribute="top" secondItem="5bE-xW-MDV" secondAttribute="top" constant="20" id="To3-j9-lbL"/>
+                            <constraint firstItem="3Iy-bV-8Wx" firstAttribute="top" secondItem="WvM-w9-EdI" secondAttribute="bottom" constant="40" id="d6r-8d-MKD"/>
+                            <constraint firstItem="3Iy-bV-8Wx" firstAttribute="leading" secondItem="5bE-xW-MDV" secondAttribute="leading" constant="50" id="fLx-DL-jS2"/>
                             <constraint firstItem="WvM-w9-EdI" firstAttribute="leading" secondItem="5bE-xW-MDV" secondAttribute="leading" constant="50" id="ruV-dZ-bVn"/>
+                            <constraint firstItem="5bE-xW-MDV" firstAttribute="trailing" secondItem="3Iy-bV-8Wx" secondAttribute="trailing" constant="50" id="uAg-cG-4q6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="allowDynamicColorScheme" destination="t6l-ZC-5pL" id="HB5-q1-MjZ"/>
+                        <outlet property="autoCopyTextSwitch" destination="mkl-OB-j6b" id="kO2-pq-1D5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcB-tb-8oe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -222,6 +278,9 @@
     </scenes>
     <resources>
         <image name="point.3.filled.connected.trianglepath.dotted" catalog="system" width="128" height="96"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

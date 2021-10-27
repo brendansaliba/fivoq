@@ -29,10 +29,13 @@ class InstructionsVC: UIViewController {
     }
     
     @IBAction func proceedButtonTapped(_ sender: Any) {
-        DispatchQueue.main.async {
-            self.dismiss(animated: true)
-            UserDefaults.standard.set(false, forKey: "UserIsNew")
-        }
+        UserDefaults.standard.set(false, forKey: "UserIsNew")
+
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainVC = storyBoard.instantiateViewController(withIdentifier: "MainVC") as! MainVC
+        mainVC.modalPresentationStyle = .fullScreen
+        mainVC.modalTransitionStyle = .crossDissolve
+        self.present(mainVC, animated: true, completion: nil)
     }
     
 }

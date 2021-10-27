@@ -26,6 +26,7 @@
 		97D522E52726509C002BEA25 /* LibreBaskerville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97D522E22726509C002BEA25 /* LibreBaskerville-Bold.ttf */; };
 		97D522EC2728E860002BEA25 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D522EB2728E860002BEA25 /* InstructionsVC.swift */; };
 		97D522EE2728E869002BEA25 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D522ED2728E869002BEA25 /* SettingsVC.swift */; };
+		97D522F02729B2E8002BEA25 /* SettingsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D522EF2729B2E8002BEA25 /* SettingsDelegate.swift */; };
 		B0CAA7F632E923CF3542868C /* Pods_fivoq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB38A2AE0B2C988E2A2DE783 /* Pods_fivoq.framework */; };
 		B19B6EE868232D59160EF05A /* Pods_fivoqTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10F7BC7909642E30BAA6450 /* Pods_fivoqTests.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,7 @@
 		97D522E22726509C002BEA25 /* LibreBaskerville-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Bold.ttf"; sourceTree = "<group>"; };
 		97D522EB2728E860002BEA25 /* InstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsVC.swift; sourceTree = "<group>"; };
 		97D522ED2728E869002BEA25 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		97D522EF2729B2E8002BEA25 /* SettingsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDelegate.swift; sourceTree = "<group>"; };
 		BB38A2AE0B2C988E2A2DE783 /* Pods_fivoq.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fivoq.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF33D2F15EC0F610A59B70BA /* Pods-fivoq.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fivoq.release.xcconfig"; path = "Target Support Files/Pods-fivoq/Pods-fivoq.release.xcconfig"; sourceTree = "<group>"; };
 		E10F7BC7909642E30BAA6450 /* Pods_fivoqTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fivoqTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 				9712076A2722468F00B0153D /* AppDelegate.swift */,
 				9712076C2722468F00B0153D /* SceneDelegate.swift */,
 				9712076E2722468F00B0153D /* ViewController.swift */,
+				97D522EF2729B2E8002BEA25 /* SettingsDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				9712079C2722482E00B0153D /* NetworkManager.swift in Sources */,
 				971207A427224AF800B0153D /* MainVC.swift in Sources */,
 				9712076F2722468F00B0153D /* ViewController.swift in Sources */,
+				97D522F02729B2E8002BEA25 /* SettingsDelegate.swift in Sources */,
 				9712076B2722468F00B0153D /* AppDelegate.swift in Sources */,
 				9712076D2722468F00B0153D /* SceneDelegate.swift in Sources */,
 				97D522EC2728E860002BEA25 /* InstructionsVC.swift in Sources */,

@@ -15,7 +15,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Set default user settings if they dont' exist
+        getDefaultSettings()
+        
         return true
+    }
+    
+    func getDefaultSettings() {
+        let userDefaults = UserDefaults.standard
+        
+        if !userDefaults.valueExists(forKey: "allowDynamicColorScheme") {
+            userDefaults.set(true, forKey: "allowDynamicColorScheme")
+        } else {
+            UserSettings.settings.allowDynamicColorScheme = userDefaults.bool(forKey: "allowDynamicColorScheme")
+        }
+        
+        if !userDefaults.valueExists(forKey: "autoCopyText") {
+            userDefaults.set(true, forKey: "autoCopyText")
+        } else {
+            UserSettings.settings.autoCopyText = userDefaults.bool(forKey: "autoCopyText")
+        }
     }
 
     // MARK: UISceneSession Lifecycle

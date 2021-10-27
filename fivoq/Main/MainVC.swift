@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class MainVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var textInput: UITextField!
     @IBOutlet weak var sendButton: UIButton!
@@ -19,7 +19,6 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         configure()
         configureMenu()
-        checkNewUser()
     }
     
     func configure() {
@@ -30,6 +29,8 @@ class MainVC: UIViewController {
         outputTextView.isEditable = false
         outputTextView.isScrollEnabled = false
         outputTextView.isSelectable = true
+        
+        textInput.delegate = self
     }
     
     func configureMenu() {
@@ -53,28 +54,8 @@ class MainVC: UIViewController {
         menuButton.menu = menu
     }
     
-    func checkNewUser() {
-        if UserDefaults.standard.valueExists(forKey: "UserIsNew") {
-            // the user is not new
-            
-            switch UserDefaults.standard.bool(forKey: "UserIsNew") {
-            case true:
-                // new user
-                DispatchQueue.main.async {
-                    self.showInstructions()
-                }
-                
-            case false:
-                // returning user
-                print("Returning user")
-            }
-
-        } else {
-            DispatchQueue.main.async {
-                UserDefaults.standard.set(true, forKey: "UserIsNew")
-                self.showInstructions()
-            }
-        }
+    func copyToClipboard(toCopy: String) {
+        UIPasteboard.general.string = toCopy
     }
     
     
@@ -84,6 +65,10 @@ class MainVC: UIViewController {
         if textInput.text! != "" {
             NetworkManager.network.generateWord(config: textInput.text!.lowercased()) { randomName in
                 self.outputTextView.text = randomName
+                
+                if UserSettings.settings.autoCopyText {
+                    self.copyToClipboard(toCopy: randomName)
+                }
             }
         } else {
             outputTextView.text = "please enter a config"
@@ -91,11 +76,8 @@ class MainVC: UIViewController {
         view.endEditing(true)
     }
     
-    func visitWebsite() {
-        if let url = NSURL(string: "http://www.fivoq.com") {
-            UIApplication.shared.open(url as URL)
-        }
-    }
+    
+    // MARK: Navigation
     
     func showInstructions() {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -107,6 +89,12 @@ class MainVC: UIViewController {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let settingsVC = storyBoard.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
         self.present(settingsVC, animated: true, completion: nil)
+    }
+    
+    func visitWebsite() {
+        if let url = NSURL(string: "http://www.fivoq.com") {
+            UIApplication.shared.open(url as URL)
+        }
     }
     
     
